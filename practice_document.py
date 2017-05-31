@@ -9,13 +9,16 @@
 #         print(row)
 #     test.close()
 
-A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
-A1 = range(10)
-A2 = sorted([i for i in A1 if i in A0])
-A3 = sorted([A0[s] for s in A0])
-A4 = [i for i in A1 if i in A3]
-A5 = {i:i*i for i in A1}
-A6 = [[i,i*i] for i in A1]
+with open('C:\\Users\\Ben\\Documents\\test_practice\\practice_doc.py\\text_test.txt', 'r+') as test:
+    test.write('this is a test')
+    test.write('\n')
+    test.write('\n')
+    test.write('this is a test 2')
 
-print(A5)
-print(A6)
+t = open('C:\\Users\\Ben\\Documents\\test_practice\\practice_doc.py\\text_test.txt', 'r+')
+t_read = t.read()
+t.close()
+
+print(t_read)
+
+
